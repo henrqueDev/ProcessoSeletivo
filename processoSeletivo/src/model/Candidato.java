@@ -29,7 +29,7 @@ public class Candidato {
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public int getPontuacaoDesempenho() {
@@ -37,11 +37,11 @@ public class Candidato {
     }
 
     public Set<Titulo> getTitulos() {
-        return titulos;
+        return this.titulos;
     }
 
     public Set<Experiencia> getExperiencias() {
-        return experiencias;
+        return this.experiencias;
     }
 
     public boolean isClassificado() {
@@ -61,19 +61,11 @@ public class Candidato {
     }
 
     public int getPontuacaoTotal() {
-        return pontuacaoDesempenho + pontuacaoTitulos;
+        return this.pontuacaoDesempenho + pontuacaoTitulos;
     }
 
     @Override
     public String toString() {
-        return "model.Candidato{" +
-                "cpf='" + cpf + '\'' +
-                ", nome='" + nome + '\'' +
-                ", pontuacaoDesempenho=" + pontuacaoDesempenho +
-                ", titulos=" + titulos +
-                ", experiencias=" + experiencias +
-                ", pontuacaoTitulos=" + pontuacaoTitulos +
-                ", pontuacaoTotal=" + getPontuacaoTotal() +
-                '}';
+        return this.nome + "| CPF:" + this.cpf;
     }
 }
