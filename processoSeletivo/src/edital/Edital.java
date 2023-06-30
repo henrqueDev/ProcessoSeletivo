@@ -52,7 +52,7 @@ public final class Edital {
 
     private void exibirClassificacaoFinal() {
         for (Candidato candidato : candidatos) {
-            System.out.println((candidatos.indexOf(candidato) + 1) + "° Lugar - " + candidato.getNome() + " - "
+            System.out.println((candidatos.indexOf(candidato) + 1) + "° Lugar | " + candidato.getNome() + " | "
                     + candidato.getPontuacaoTotal() + " pontos");
         }
     }
