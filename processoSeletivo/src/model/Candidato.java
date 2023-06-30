@@ -33,7 +33,7 @@ public class Candidato {
     }
 
     public int getPontuacaoDesempenho() {
-        return pontuacaoDesempenho;
+        return Math.min(this.pontuacaoDesempenho, 100);
     }
 
     public Set<Titulo> getTitulos() {
@@ -61,7 +61,7 @@ public class Candidato {
     }
 
     public int getPontuacaoTotal() {
-        return this.pontuacaoDesempenho + pontuacaoTitulos;
+        return this.getPontuacaoDesempenho() + this.getPontuacaoTitulos();
     }
 
     @Override
