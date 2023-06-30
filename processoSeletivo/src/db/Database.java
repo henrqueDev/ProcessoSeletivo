@@ -20,7 +20,7 @@ public final class Database {
         this.candidatos = new HashSet<Candidato>(
                 new ArrayList<>(Arrays.asList(
                         new Candidato(
-                                "1.111.111",
+                                "111.111.111-11",
                                 "Sion",
                                 Set.of(new Titulo[] { new TituloDoutor() }),
                                 Set.of(new Experiencia[] {
@@ -29,7 +29,7 @@ public final class Database {
                                         new ExperienciaGestaoAcademicaCargoDirecao(1) }),
                                 79),
                         new Candidato(
-                                "2.222.222",
+                                "222.222.222-22",
                                 "Jão",
                                 Set.of(new Titulo[] { new TituloDoutor() }),
                                 Set.of(new Experiencia[] {
@@ -38,7 +38,7 @@ public final class Database {
                                         new ExperienciaGestaoAcademicaCargoDirecao(2) }),
                                 89),
                         new Candidato(
-                                "3.333.333",
+                                "333.333.333-33",
                                 "Chico Melancia",
                                 Set.of(new Titulo[] { new TituloDoutor() }),
                                 Set.of(new Experiencia[] {
@@ -46,14 +46,14 @@ public final class Database {
                                         new ExperienciaGestaoAcademicaCoordenacao(3) }),
                                 70),
                         new Candidato(
-                                "4.444.444",
+                                "444.444.444-44",
                                 "Carla",
                                 Set.of(new Titulo[] { new TituloDoutor() }),
                                 Set.of(new Experiencia[] {
                                         new ExperienciaMagisterioIF(2) }),
                                 99),
                         new Candidato(
-                                "5.555.555",
+                                "555.555.555-55",
                                 "Fabiana",
                                 Set.of(new Titulo[] { new TituloDoutor() }),
                                 Set.of(new Experiencia[] {
