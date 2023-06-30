@@ -1,5 +1,8 @@
 package handler;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import model.Candidato;
 
 public class ProvaDesempenhoHandler extends BaseHandler {
@@ -11,6 +14,7 @@ public class ProvaDesempenhoHandler extends BaseHandler {
                         + candidato.getPontuacaoDesempenho());
         if (candidato.getPontuacaoDesempenho() >= 70) {
             if (this.next != null) {
+                candidato.classificar();
                 this.next.handle(candidato);
             }
         } else {

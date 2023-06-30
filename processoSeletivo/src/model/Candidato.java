@@ -11,6 +11,7 @@ public class Candidato {
     private final int pontuacaoDesempenho;
     private final Set<Titulo> titulos;
     private final Set<Experiencia> experiencias;
+    private boolean classificado;
     private int pontuacaoTitulos;
 
     public Candidato(String cpf, String nome, Set<Titulo> titulos,
@@ -20,6 +21,7 @@ public class Candidato {
         this.titulos = titulos;
         this.experiencias = experiencias;
         this.pontuacaoDesempenho = pontuacaoDesempenho;
+        this.classificado = false;
     }
 
     public String getCPF() {
@@ -40,6 +42,14 @@ public class Candidato {
 
     public Set<Experiencia> getExperiencias() {
         return experiencias;
+    }
+
+    public boolean isClassificado() {
+        return this.classificado;
+    }
+
+    public void classificar() {
+        this.classificado = true;
     }
 
     public int getPontuacaoTitulos() {
