@@ -53,7 +53,7 @@ public class Candidato {
     }
 
     public int getPontuacaoTitulos() {
-        return pontuacaoTitulos;
+        return Math.min(pontuacaoTitulos, 75);
     }
 
     public void setPontuacaoTitulos(int pontuacaoTitulos) {
