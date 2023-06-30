@@ -1,8 +1,5 @@
 package handler;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import model.Candidato;
 
 public class ProvaDesempenhoHandler extends BaseHandler {
