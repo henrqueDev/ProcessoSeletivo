@@ -6,7 +6,7 @@ import model.experiencia.abstrato.Experiencia;
 import model.titulo.abstrato.Titulo;
 
 public class Candidato {
-    private final String cpf;
+    private final String rg;
     private final String nome;
     private final int pontuacaoDesempenho;
     private final Set<Titulo> titulos;
@@ -14,9 +14,9 @@ public class Candidato {
     private boolean classificado;
     private int pontuacaoTitulos;
 
-    public Candidato(String cpf, String nome, Set<Titulo> titulos,
+    public Candidato(String rg, String nome, Set<Titulo> titulos,
             Set<Experiencia> experiencias, int pontuacaoDesempenho) {
-        this.cpf = cpf;
+        this.rg = rg;
         this.nome = nome;
         this.titulos = titulos;
         this.experiencias = experiencias;
@@ -24,8 +24,8 @@ public class Candidato {
         this.classificado = false;
     }
 
-    public String getCPF() {
-        return this.cpf;
+    public String getRG() {
+        return this.rg;
     }
 
     public String getNome() {
@@ -66,6 +66,6 @@ public class Candidato {
 
     @Override
     public String toString() {
-        return this.nome + "| CPF:" + this.cpf;
+        return this.nome + "| RG:" + this.rg;
     }
 }
